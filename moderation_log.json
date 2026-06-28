@@ -1,0 +1,41 @@
+[
+  {
+    "timestamp": "2026-06-28T09:00:00+00:00",
+    "review_id": "REV-1001",
+    "review_text": "Great product, fast delivery, highly recommend!",
+    "ai_recommendation": "APPROVE",
+    "ai_reasoning": "No policy violations detected; positive experience review.",
+    "violated_rules": [],
+    "confidence": 0.93,
+    "human_decision": "APPROVE",
+    "final_action": "APPROVE",
+    "moderator_note": "Moderator approved AI recommendation.",
+    "escalated": false
+  },
+  {
+    "timestamp": "2026-06-28T09:15:00+00:00",
+    "review_id": "REV-1002",
+    "review_text": "This seller is fake, and this product is a total scam.",
+    "ai_recommendation": "REMOVE",
+    "ai_reasoning": "Potential defamation and abuse; requires stronger evidence.",
+    "violated_rules": ["abuse_03"],
+    "confidence": 0.72,
+    "human_decision": "OVERRIDE FLAG Keep for manual senior review",
+    "final_action": "FLAG",
+    "moderator_note": "Moderator override reason: Keep for manual senior review",
+    "escalated": false
+  },
+  {
+    "timestamp": "2026-06-28T09:30:00+00:00",
+    "review_id": "REV-1003",
+    "review_text": "Call me at 555-101-2211 for discounts and private deals.",
+    "ai_recommendation": "FLAG",
+    "ai_reasoning": "Contains potential personal/contact information and solicitation.",
+    "violated_rules": ["privacy_07", "spam_02"],
+    "confidence": 0.88,
+    "human_decision": "ESCALATE Possible fraud ring indicator",
+    "final_action": "ESCALATE",
+    "moderator_note": "Possible fraud ring indicator",
+    "escalated": true
+  }
+]

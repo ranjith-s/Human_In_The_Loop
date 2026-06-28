@@ -1,0 +1,1 @@
+Phone numbers and external contact solicitations in reviews should be flagged.

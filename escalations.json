@@ -1,0 +1,15 @@
+[
+  {
+    "timestamp": "2026-06-28T09:30:00+00:00",
+    "review_id": "REV-1003",
+    "review_text": "Call me at 555-101-2211 for discounts and private deals.",
+    "ai_recommendation": "FLAG",
+    "ai_reasoning": "Contains potential personal/contact information and solicitation.",
+    "violated_rules": ["privacy_07", "spam_02"],
+    "confidence": 0.88,
+    "human_decision": "ESCALATE Possible fraud ring indicator",
+    "final_action": "ESCALATE",
+    "moderator_note": "Possible fraud ring indicator",
+    "escalated": true
+  }
+]
