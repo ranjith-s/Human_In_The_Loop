@@ -49,7 +49,7 @@ python ingest.py --data-dir data/ecommerce_policies --chroma-dir chroma_db --res
 4. Run a moderation session:
 
 ```bash
-python graph.py REV-2001 "This is the worst product, seller is a scammer"
+python graph.py --review_id REV-2001 --review_text "This is the worst product, seller is a scammer"
 ```
 
 5. When prompted at the checkpoint, enter one of:
