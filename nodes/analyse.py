@@ -25,7 +25,7 @@ COLLECTION_NAME = "moderation_policies"
 EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 DEFAULT_PERSIST_DIR = os.getenv("CHROMA_PERSIST_DIR", "chroma_db")
 OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
-OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "llama3")
+OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "llama3.2:3b")
 
 
 def _build_policy_collection(persist_dir: str = DEFAULT_PERSIST_DIR):
