@@ -37,5 +37,57 @@
     "final_action": "ESCALATE",
     "moderator_note": "Possible fraud ring indicator",
     "escalated": true
+  },
+  {
+    "timestamp": "2026-07-02T02:56:46.041307+00:00",
+    "review_id": "REV_001",
+    "review_text": "/home/naman/Downloads/HITL_Lab-main/data/ecommerce_policies/privacy__high__PR01.txt",
+    "ai_recommendation": "FLAG",
+    "ai_reasoning": "Analysis fallback due to runtime error: Ollama call failed with status code 404. Maybe your model is not found and you should pull the model with `ollama pull llama3`.",
+    "violated_rules": ["analysis_runtime_error"],
+    "confidence": 0.2,
+    "human_decision": "APPROVE",
+    "final_action": "FLAG",
+    "moderator_note": "Moderator approved AI recommendation.",
+    "escalated": false
+  },
+  {
+    "timestamp": "2026-07-02T02:59:44.742207+00:00",
+    "review_id": "REV_001",
+    "review_text": "/home/naman/Downloads/HITL_Lab-main/data/ecommerce_policies/privacy__high__PR01.txt",
+    "ai_recommendation": "APPROVE",
+    "ai_reasoning": "Policy text matches review content",
+    "violated_rules": ["PR01"],
+    "confidence": 0.0,
+    "human_decision": "Approve",
+    "final_action": "APPROVE",
+    "moderator_note": "Moderator approved AI recommendation.",
+    "escalated": false
+  },
+  {
+    "timestamp": "2026-07-02T05:42:45.652090+00:00",
+    "review_id": "REV-001",
+    "review_text": "spam__medium__SP01.txt",
+    "ai_recommendation": "FLAG",
+    "ai_reasoning": "Review contains spam and a potential privacy violation",
+    "violated_rules": ["SP01", "PR02"],
+    "confidence": 0.0,
+    "human_decision": "APPROVE",
+    "final_action": "FLAG",
+    "moderator_note": "Moderator approved AI recommendation.",
+    "escalated": false
+  },
+  {
+    "timestamp": "2026-07-02T05:45:47.038900+00:00",
+    "review_id": "REV-001",
+    "review_text": "spam__medium__SP01.txt",
+    "ai_recommendation": "FLAG",
+    "ai_reasoning": "Review contains spam and potential doxxing",
+    "violated_rules": ["SP01", "PR02"],
+    "confidence": 0.0,
+    "human_decision": "OVERRIDE FLAG <privacy breach detected>",
+    "final_action": "FLAG",
+    "moderator_note": "Moderator override reason: <privacy breach detected>",
+    "escalated": false
   }
 ]

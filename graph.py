@@ -123,8 +123,8 @@ if __name__ == "__main__":
     import json
 
     parser = argparse.ArgumentParser(description="Run Lab 3 HITL moderation flow.")
-    parser.add_argument("review_id", type=str, help="Unique identifier for the review")
-    parser.add_argument("review_text", type=str, help="The review text to moderate")
+    parser.add_argument("--review_id", type=str, help="Unique identifier for the review")
+    parser.add_argument("--review_text", type=str, help="The review text to moderate")
     parser.add_argument(
         "--thread-id",
         type=str,
